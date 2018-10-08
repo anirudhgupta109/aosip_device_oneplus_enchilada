@@ -32,17 +32,17 @@ AB_OTA_UPDATER := true
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
-DEVICE_PACKAGE_OVERLAYS += device/oneplus/enchilada/overlay
+DEVICE_PACKAGE_OVERLAYS += device/oneplus/oneplus6/overlay
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/oneplus/enchilada/device.mk)
+$(call inherit-product, device/oneplus/oneplus6/device.mk)
 
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := aosip_enchilada
-PRODUCT_DEVICE := enchilada
+PRODUCT_NAME := aosip_oneplus6
+PRODUCT_DEVICE := oneplus6
 PRODUCT_BRAND := OnePlus
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := ONEPLUS A6003
