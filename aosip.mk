@@ -23,8 +23,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common Nitrogen stuff.
-$(call inherit-product, vendor/nitrogen/products/common.mk)
+# Inherit some common AOSiP stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 AB_OTA_UPDATER := true
 
@@ -37,13 +37,11 @@ DEVICE_PACKAGE_OVERLAYS += device/oneplus/oneplus6/overlay
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/oneplus/oneplus6/device.mk)
 
-ALLOW_MISSING_DEPENDENCIES := true
-
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := nitrogen_oneplus6
+PRODUCT_NAME := aosip_oneplus6
 PRODUCT_DEVICE := oneplus6
 PRODUCT_BRAND := OnePlus
 PRODUCT_MANUFACTURER := OnePlus
