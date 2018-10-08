@@ -86,6 +86,6 @@ ALL_DEFAULT_INSTALLED_MODULES += $(IMS_SYMLINKS)
 #	ln -sf /dev/block/bootdevice/by-name/msadp \
 #	$(TARGET_OUT_VENDOR)/firmware/msadp)
 #
-#-include device/oneplus/oneplus6/tftp.mk
+#-include device/oneplus/enchilada/tftp.mk
 
 endif
