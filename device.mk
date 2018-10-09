@@ -198,8 +198,8 @@ PRODUCT_PACKAGES += \
     power.oneplus6
 
 # ANT+
-PRODUCT_PACKAGES += \
-    AntHalService
+#PRODUCT_PACKAGES += \
+#    AntHalService
 
 # QMI
 PRODUCT_PACKAGES += \
